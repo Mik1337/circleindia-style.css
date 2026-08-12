@@ -1,3 +1,4 @@
+/*! Circle India styles v1.0.0 */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css");
 
@@ -125,7 +126,7 @@ h6 {
 
 .card {
   background-color: var(--primary-white);
-  border: 1px solid var(--gold-8);
+  border: 1px solid var(--gold-2);
   border-radius: 8px;
 }
 
@@ -162,7 +163,7 @@ h6 {
 /* Table styles */
 .table-container {
   background: var(--primary-white);
-  border: 1px solid var(--gold-8);
+  border: 1px solid var(--gold-2);
   border-radius: 8px;
   overflow: hidden;
 }
