@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Circle India — Brand Showcase</title>
+  <link rel="stylesheet" href="style.min.css" />
+  <style>
+    :root {
+      --primary: #cc9711;
+      --primary-dark: #8f6a0c;
+      --primary-deep: #4a3808;
+      --gold-1: #cc9711;
+      --gold-2: #d6ac41;
+      --gold-3: #e0c170;
+      --gold-4: #e8d094;
+      --gold-5: #f0e0b8;
+      --gold-6: #f5eacf;
+      --gold-7: #f9f3e2;
+      --gold-8: #fcf9f1;
+      --gold-9: #fdfcf8;
+      --gold-soft: #fbf8ee;
+      --gray-1: #58595b;
+      --gray-2: #757575;
+      --gray-3: #e4e4e4;
+      --white: #ffffff;
+    }
+
+    body {
+      padding-bottom: 64px;
+    }
+
+    .wrap {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .hero {
+      background-color: var(--gold-9);
+      border-bottom: 1px solid var(--gold-8);
+      padding: 64px 0 56px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--gold-soft);
+      border: 1px solid var(--gold-8);
+      color: var(--primary-dark);
+      border-radius: 999px;
+      padding: 4px 14px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 20px;
+    }
+
+    .hero-title {
+      font-size: 2.75rem;
+      font-weight: 600;
+      line-height: 1.15;
+    }
+
+    .hero-title .accent {
+      color: var(--primary);
+    }
+
+    .hero-sub {
+      margin-top: 16px;
+      max-width: 560px;
+    }
+
+    .section {
+      margin-top: 56px;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .section-sub {
+      margin-bottom: 24px;
+    }
+
+    .swatch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 16px;
+    }
+
+    .swatch {
+      border: 1px solid var(--gray-3);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--white);
+    }
+
+    .swatch-chip {
+      height: 72px;
+    }
+
+    .swatch-info {
+      padding: 10px 12px;
+      border-top: 1px solid var(--gray-3);
+    }
+
+    .swatch-name {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--gray-1);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .swatch-hex {
+      font-size: 0.75rem;
+      color: var(--gray-2);
+      margin-top: 2px;
+    }
+
+    .type-row {
+      border-bottom: 1px solid var(--gray-3);
+      padding: 20px 0;
+    }
+
+    .type-row:last-child {
+      border-bottom: none;
+    }
+
+    .type-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gray-2);
+      margin-bottom: 6px;
+    }
+
+    .weight-row {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .component-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+
+    .card .card-body {
+      padding: 24px;
+    }
+
+    .icon-row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .icon-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      color: var(--gray-2);
+    }
+
+    .icon-item i {
+      font-size: 1.75rem;
+      color: var(--primary);
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--gray-3);
+      font-size: 0.875rem;
+      color: var(--gray-2);
+    }
+
+    .footer strong {
+      color: var(--primary);
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="wrap">
+      <span class="hero-badge">Brand System</span>
+      <h1 class="hero-title">Circle <span class="accent">India</span></h1>
+      <p class="hero-sub secondary-text">Colour and typography in action — primary <strong style="color: var(--primary);">#cc9711</strong> on a white background, Poppins for headings, Inter for body text.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- Colour palette -->
+    <section class="section">
+      <h2 class="section-title">Colour palette</h2>
+      <p class="section-sub secondary-text">The brand gold and its tint scale, built for white backgrounds.</p>
+
+      <div class="swatch-grid">
+        <div class="swatch">
+          <div class="swatch-chip" style="background: #cc9711;"></div>
+          <div class="swatch-info">
+            <div class="swatch-name">Primary</div>
+            <div class="swatch-hex">#cc9711</div>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-chip" style="background: #8f6a0c;"></div>
+          <div class="swatch-info">
+            <div class="swatch-name">Primary Dark</div>
+            <div class="swatch-hex">#8f6a0c</div>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-chip" style="background: #4a3808;"></div>
+          <div class="swatch-info">
+            <div class="swatch-name">Primary Deep</div>
+            <div class="swatch-hex">#4a3808</div>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-chip" style="background: #d6ac41;"></div>
+          <div class="swatch-info">
+            <div class="swatch-name">Gold 2</div>
+            <div class="swatch-hex">#d6ac41</div>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-chip" style="background: #e0c170;"></div>
+          <div class="swatch-info">
+            <div class="swatch-name">Gold 3</div>
+            <div class="swatch-hex">#e0c170</div>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-chip" style="background: #e8d094;"></div>
+          <div class="swatch-info">
+            <div class="swatch-name">Gold 4</div>
+            <div class="swatch-hex">#e8d094</div>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-chip" style="background: #f0e0b8;"></div>
+          <div class="swatch-info">
+            <div class="swatch-name">Gold 5</div>
+            <div class="swatch-hex">#f0e0b8</div>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-chip" style="background: #f5eacf;"></div>
+          <div class="swatch-info">
+            <div class="swatch-name">Gold 6</div>
+            <div class="swatch-hex">#f5eacf</div>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-chip" style="background: #f9f3e2;"></div>
+          <div class="swatch-info">
+            <div class="swatch-name">Gold 7</div>
+            <div class="swatch-hex">#f9f3e2</div>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-chip" style="background: #fcf9f1;"></div>
+          <div class="swatch-info">
+            <div class="swatch-name">Gold 8</div>
+            <div class="swatch-hex">#fcf9f1</div>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-chip" style="background: #fdfcf8; border-bottom: 1px solid var(--gray-3);"></div>
+          <div class="swatch-info">
+            <div class="swatch-name">Gold 9</div>
+            <div class="swatch-hex">#fdfcf8</div>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-chip" style="background: #fbf8ee; border-bottom: 1px solid var(--gray-3);"></div>
+          <div class="swatch-info">
+            <div class="swatch-name">Gold Soft</div>
+            <div class="swatch-hex">#fbf8ee</div>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-chip" style="background: #58595b;"></div>
+          <div class="swatch-info">
+            <div class="swatch-name">Gray 1 / Ink</div>
+            <div class="swatch-hex">#58595b</div>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-chip" style="background: #757575;"></div>
+          <div class="swatch-info">
+            <div class="swatch-name">Gray 2 / Muted</div>
+            <div class="swatch-hex">#757575</div>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-chip" style="background: #e4e4e4; border-bottom: 1px solid var(--gray-3);"></div>
+          <div class="swatch-info">
+            <div class="swatch-name">Gray 3 / Border</div>
+            <div class="swatch-hex">#e4e4e4</div>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-chip" style="background: #ffffff; border-bottom: 1px solid var(--gray-3);"></div>
+          <div class="swatch-info">
+            <div class="swatch-name">Background</div>
+            <div class="swatch-hex">#ffffff</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Typography -->
+    <section class="section">
+      <h2 class="section-title">Typography</h2>
+      <p class="section-sub secondary-text">Poppins for headings, Inter for body and UI text.</p>
+
+      <div class="type-row">
+        <div class="type-label">Poppins 600 — h1 · 44px</div>
+        <h1 style="font-size: 2.75rem;">Circle India heading</h1>
+      </div>
+      <div class="type-row">
+        <div class="type-label">Poppins 500 — h2 · 24px</div>
+        <h2>Section heading</h2>
+      </div>
+      <div class="type-row">
+        <div class="type-label">Poppins 500 — h3 · 18.72px</div>
+        <h3>Card heading</h3>
+      </div>
+      <div class="type-row">
+        <div class="type-label">Poppins 500 — h4 · 16px</div>
+        <h4>Component heading</h4>
+      </div>
+      <div class="type-row">
+        <div class="type-label">Poppins 500 — h5 · 13.28px</div>
+        <h5>Small heading</h5>
+      </div>
+      <div class="type-row">
+        <div class="type-label">Poppins 500 — h6 · 10.72px</div>
+        <h6>Caption heading</h6>
+      </div>
+      <div class="type-row">
+        <div class="type-label">Inter 300 — Body · 16px · line-height 1.5</div>
+        <p>Primary body copy in Inter Light. Line height of 1.5 keeps long-form content comfortable on white, with the brand gold reserved for headings and key highlights.</p>
+      </div>
+      <div class="type-row">
+        <div class="type-label">Inter 300 — .secondary-text</div>
+        <p class="secondary-text">Secondary and supporting text in muted gray, used for descriptions, captions and helper copy.</p>
+      </div>
+      <div class="type-row">
+        <div class="type-label">Inter weight ladder</div>
+        <div class="weight-row">
+          <div style="font-weight: 300;">Light 300</div>
+          <div style="font-weight: 400;">Regular 400</div>
+          <div style="font-weight: 500;">Medium 500</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Components -->
+    <section class="section">
+      <h2 class="section-title">Components in action</h2>
+      <p class="section-sub secondary-text">Buttons, pills, cards, progress, tables and icons using the stylesheet classes.</p>
+
+      <div class="component-row">
+        <div class="card">
+          <div class="card-body">
+            <h3>Call to action</h3>
+            <p class="secondary-text" style="margin: 8px 0 16px;">Gold button with deep-brown text.</p>
+            <button class="cta-button">Get started</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h3>Pills &amp; badges</h3>
+            <p style="margin-top: 12px;">
+              <span class="pill pill-warn">Upcoming</span>
+              <span class="pill pill-quiet">Draft</span>
+            </p>
+            <p style="margin-top: 12px;">
+              <span class="pill" style="background: var(--gold-9); color: var(--primary-dark);">Membership</span>
+              <span class="pill" style="background: var(--gold-9); color: var(--primary-dark);">Verified</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h3>Progress</h3>
+            <p class="secondary-text" style="margin: 8px 0 12px;">Enrolment at 64%</p>
+            <div class="load-bar" style="height: 8px;">
+              <div class="load-bar-fill" style="width: 64%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="light-bg" style="padding: 24px; border-radius: 8px; margin-bottom: 24px;">
+        <p style="font-weight: 500; margin-bottom: 4px;">Light background section (.light-bg)</p>
+        <p class="secondary-text" style="color: var(--primary-dark);">Gold-9 wash with primary-coloured text — for callout banners and highlights.</p>
+      </div>
+
+      <div class="dark-bg" style="padding: 24px; border-radius: 8px; margin-bottom: 32px;">
+        <p style="font-weight: 500; margin-bottom: 4px;">Dark background section (.dark-bg)</p>
+        <p style="opacity: 0.85;">Deep gold with white text — for footers and emphasis bands.</p>
+      </div>
+
+      <div class="table-container">
+        <table class="table">
+          <thead>
+            <tr class="tr">
+              <th class="th">Member</th>
+              <th class="th">Circle</th>
+              <th class="th">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tr">
+              <td class="td">Ananya Sharma</td>
+              <td class="td">Mumbai</td>
+              <td class="td"><span class="pill pill-warn">Upcoming</span></td>
+            </tr>
+            <tr class="tr">
+              <td class="td">Rahul Mehta</td>
+              <td class="td">Delhi</td>
+              <td class="td"><span class="pill pill-quiet">Draft</span></td>
+            </tr>
+            <tr class="tr">
+              <td class="td">Priya Nair</td>
+              <td class="td">Bangalore</td>
+              <td class="td"><span class="pill" style="background: var(--gold-9); color: var(--primary-dark);">Verified</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card" style="margin-top: 32px;">
+        <div class="card-body">
+          <h3>Icons</h3>
+          <p class="secondary-text" style="margin: 8px 0 16px;">Bootstrap Icons, tinted with the primary colour.</p>
+          <div class="icon-row">
+            <div class="icon-item"><i class="bi bi-people-fill"></i>Community</div>
+            <div class="icon-item"><i class="bi bi-calendar-event"></i>Events</div>
+            <div class="icon-item"><i class="bi bi-graph-up-arrow"></i>Growth</div>
+            <div class="icon-item"><i class="bi bi-award-fill"></i>Recognition</div>
+            <div class="icon-item"><i class="bi bi-geo-alt-fill"></i>Chapters</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="wrap footer">
+    Circle India brand system — primary <strong>#cc9711</strong> on <strong>#ffffff</strong>. Poppins + Inter via Google Fonts, icons via Bootstrap Icons.
+  </footer>
+
+</body>
+</html>

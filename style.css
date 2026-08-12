@@ -2,24 +2,22 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css");
 
 :root {
-  --primary-purple: #5e286e;
-  --primary-purple-dark: #60296f;
-  --primary-yellow: #ffd714;
+  --primary: #cc9711;
+  --primary-dark: #8f6a0c;
+  --primary-deep: #4a3808;
   --primary-white: #ffffff;
 
-  --purple-1: #5e286e;
-  --purple-2: #6e3a7e;
-  --purple-3: #7f4c8f;
-  --purple-4: #8f5d9f;
-  --purple-5: #a06fb0;
-  --purple-6: #b081c0;
-  --purple-7: #bf93cf;
-  --purple-8: #cfa5df;
-  --purple-9: #e2d4f0;
+  --gold-1: #cc9711;
+  --gold-2: #d6ac41;
+  --gold-3: #e0c170;
+  --gold-4: #e8d094;
+  --gold-5: #f0e0b8;
+  --gold-6: #f5eacf;
+  --gold-7: #f9f3e2;
+  --gold-8: #fcf9f1;
+  --gold-9: #fdfcf8;
 
-  --yellow-1: #ffd714;
-  --yellow-2: #dab911;
-  --yellow-soft: #fdf6d8;
+  --gold-soft: #fbf8ee;
 
   --gray-1: #58595b;
   --gray-2: #757575;
@@ -49,7 +47,7 @@ h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   text-transform: none;
-  color: var(--primary-purple);
+  color: var(--primary);
 }
 
 .secondary-text {
@@ -60,8 +58,8 @@ h6 {
 
 .cta-button {
   text-transform: uppercase;
-  background-color: var(--primary-yellow);
-  color: var(--primary-purple-dark);
+  background-color: var(--primary);
+  color: var(--primary-deep);
   border: none;
   padding: 12px 24px;
   font-family: "Poppins", sans-serif;
@@ -71,26 +69,26 @@ h6 {
 }
 
 .dark-bg {
-  background-color: var(--primary-purple);
+  background-color: var(--primary-dark);
   color: var(--primary-white);
 }
 
 .light-bg {
-  background-color: var(--purple-9);
-  color: var(--primary-purple);
+  background-color: var(--gold-9);
+  color: var(--primary);
 }
 
 /* Brand helpers (no Tailwind dependency, work with the v1 CDN) */
 .text-purple {
-  color: var(--primary-purple);
+  color: var(--primary);
 }
 
 .text-purple-muted {
-  color: var(--purple-5);
+  color: var(--gold-5);
 }
 
 .text-purple-faint {
-  color: var(--purple-8);
+  color: var(--gold-8);
 }
 
 .text-ink {
@@ -102,7 +100,7 @@ h6 {
 }
 
 .bg-purple {
-  background-color: var(--primary-purple);
+  background-color: var(--primary);
 }
 
 .divide-purple-soft > * + * {
@@ -110,11 +108,11 @@ h6 {
 }
 
 .nav-link:hover {
-  background-color: var(--purple-9);
+  background-color: var(--gold-9);
 }
 
 .bg-purple-soft {
-  background-color: var(--purple-9);
+  background-color: var(--gold-9);
 }
 
 .bg-ink-soft {
@@ -122,12 +120,12 @@ h6 {
 }
 
 .border-purple {
-  border-color: var(--purple-8);
+  border-color: var(--gold-8);
 }
 
 .card {
   background-color: var(--primary-white);
-  border: 1px solid var(--purple-8);
+  border: 1px solid var(--gold-8);
   border-radius: 8px;
 }
 
@@ -140,8 +138,8 @@ h6 {
 }
 
 .pill-warn {
-  background-color: var(--yellow-soft);
-  color: var(--primary-purple);
+  background-color: var(--gold-soft);
+  color: var(--primary-dark);
 }
 
 .pill-quiet {
@@ -156,7 +154,7 @@ h6 {
 }
 
 .load-bar-fill {
-  background-color: var(--primary-yellow);
+  background-color: var(--primary);
   height: 100%;
   border-radius: 999px;
 }
@@ -164,7 +162,7 @@ h6 {
 /* Table styles */
 .table-container {
   background: var(--primary-white);
-  border: 1px solid var(--purple-8);
+  border: 1px solid var(--gold-8);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -177,14 +175,14 @@ h6 {
 }
 
 .th {
-  background-color: var(--purple-9);
+  background-color: var(--gold-9);
   padding: 12px 24px;
   font-weight: 500;
-  color: var(--primary-purple);
+  color: var(--primary);
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  border-bottom: 1px solid var(--purple-8);
+  border-bottom: 1px solid var(--gold-8);
 }
 
 .td {
@@ -198,5 +196,5 @@ h6 {
 }
 
 .tr:hover {
-  background-color: var(--purple-9);
+  background-color: var(--gold-9);
 }
